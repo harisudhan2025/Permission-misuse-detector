@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lyt_relationship" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_husband" android:text="@string/chinese_character_husband" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_wife" android:text="@string/chinese_character_wife" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_c_relationship" android:src="@drawable/btn_pad_c" android:scaleType="centerInside" android:contentDescription="@string/clearDesc" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_del_relationship" android:src="@drawable/btn_pad_del" android:scaleType="centerInside" android:contentDescription="@string/deleteDesc" style="@style/CalWidget.Button.Pad.V.Last.H" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_father" android:text="@string/chinese_character_father" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_mother" android:text="@string/chinese_character_mother" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_son" android:text="@string/chinese_character_son" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_daughter" android:text="@string/chinese_character_daughter" style="@style/CalWidget.Button.Pad.V.Last.H" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_elder_brother" android:text="@string/chinese_character_elder_brother" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_younger_brother" android:text="@string/chinese_character_younger_brother" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_elder_sister" android:text="@string/chinese_character_elder_sister" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:id="@id/btn_younger_sister" android:text="@string/chinese_character_younger_sister" style="@style/CalWidget.Button.Pad.V.Last.H" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.RelationshipNumPadTextView android:enabled="false" android:id="@id/relationship_btn_cross_check" android:layout_width="0.0dip" android:text="@string/chinese_character_cross_check" android:layout_weight="499.0" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_equal_relationship" android:background="@drawable/number_back_equal" android:layout_width="0.0dip" android:src="@drawable/btn_pad_equal" android:scaleType="centerInside" android:layout_weight="153.0" android:contentDescription="@string/equalDesc" style="@style/CalWidget.Button.Pad.V.Last.H" />
+    </LinearLayout>
+</LinearLayout>

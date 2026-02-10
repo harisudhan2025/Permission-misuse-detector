@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/root_sv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/top_content_sv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="end|top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.miui.calculator.common.widget.AutoFitTextView android:textSize="@dimen/wf_number_size_normal" android:textColor="@color/item_high_light" android:gravity="end" android:id="@id/txv_number" android:paddingTop="@dimen/word_figure_txv_number_top_in_pad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:fontFeatureSettings="ss01" />
+                    <TextView android:gravity="end" android:id="@id/txv_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txv_number" android:layout_centerHorizontal="true" style="@style/Miuix.AppCompat.TextAppearance.InPad" />
+                </RelativeLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/word_figure_result_text_view_height">
+                    <com.miui.calculator.cal.ResultTextView android:textSize="@dimen/wf_word_size_normal" android:textColor="@color/word_figure_text" android:gravity="end|center" android:layout_gravity="end" android:id="@id/txv_word_figure" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.miui.calculator.common.widget.numberpad.ConvertCommonNumberPad android:id="@id/nbp_pad" android:layout_width="fill_parent" android:layout_height="@dimen/nbp_convert_word_figure_height" android:paddingHorizontal="@dimen/convert_numberpad_horizontal_padding" />
+    </LinearLayout>
+</ScrollView>

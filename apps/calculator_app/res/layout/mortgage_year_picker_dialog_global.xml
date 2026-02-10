@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:paddingStart="@dimen/martgage_number_picker_padding" android:paddingEnd="@dimen/martgage_number_picker_padding" android:layout_marginStart="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_nbp_year" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_years" android:maxLines="1" android:singleLine="true" android:color="@color/finance_dialog_duration_title_color" android:fontFamily="mipro-demibold" />
+        <miuix.pickerwidget.widget.NumberPicker android:textColorHighlight="@color/main_color" android:id="@id/nbp_year" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_nbp_month" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_months" android:maxLines="1" android:singleLine="true" android:color="@color/finance_dialog_duration_title_color" android:fontFamily="mipro-demibold" />
+        <miuix.pickerwidget.widget.NumberPicker android:textColorHighlight="@color/main_color" android:id="@id/nbp_month" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

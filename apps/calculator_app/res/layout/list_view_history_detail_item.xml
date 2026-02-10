@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/divider" android:background="@color/divider_item" android:layout_width="fill_parent" android:layout_height="@dimen/city_picker_item_divider" android:layout_marginTop="@dimen/list_padding_horizontal_top" android:layout_marginBottom="@dimen/list_padding_horizontal_top" />
+    <TextView android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="@dimen/history_time_height" android:layout_below="@id/divider" android:layoutDirection="ltr" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:id="@id/history_detail_item" android:background="@drawable/history_item_selected" android:paddingTop="@dimen/history_item_margin" android:paddingBottom="@dimen/history_item_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/time">
+        <RelativeLayout android:orientation="vertical" android:id="@id/result_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/check_box">
+            <TextView android:gravity="end" android:id="@id/expression" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textMultiLine" android:textAlignment="viewEnd" android:layoutDirection="ltr" android:layout_alignParentEnd="true" />
+            <com.miui.calculator.cal.PopupMenuTextView android:gravity="end" android:id="@id/word_figure" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/expression" android:layoutDirection="ltr" />
+        </RelativeLayout>
+        <CheckBox android:id="@id/check_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/check_box_style.history" />
+    </RelativeLayout>
+</RelativeLayout>

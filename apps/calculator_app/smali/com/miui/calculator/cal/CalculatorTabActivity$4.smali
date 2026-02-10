@@ -1,0 +1,73 @@
+.class Lcom/miui/calculator/cal/CalculatorTabActivity$4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/miui/calculator/common/widget/BaseAlertDialog$OnButtonClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/miui/calculator/cal/CalculatorTabActivity;->c1(Z)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/miui/calculator/cal/CalculatorTabActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/miui/calculator/cal/CalculatorTabActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/miui/calculator/cal/CalculatorTabActivity$4;->a:Lcom/miui/calculator/cal/CalculatorTabActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/miui/calculator/cal/CalculatorTabActivity$4;->a:Lcom/miui/calculator/cal/CalculatorTabActivity;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/miui/calculator/cal/CalculatorTabActivity;->U0(Lcom/miui/calculator/cal/CalculatorTabActivity;Z)V
+
+    invoke-static {}, Lcom/miui/calculator/common/utils/analytics/AnalyticsTransmitter;->i()Lcom/miui/calculator/common/utils/analytics/AnalyticsTransmitter;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/miui/calculator/CalculatorApplication;->g()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/miui/calculator/common/utils/analytics/AnalyticsTransmitter;->h(Landroid/content/Context;)V
+
+    iget-object p0, p0, Lcom/miui/calculator/cal/CalculatorTabActivity$4;->a:Lcom/miui/calculator/cal/CalculatorTabActivity;
+
+    invoke-static {p0}, Lcom/miui/calculator/cal/CalculatorTabActivity;->V0(Lcom/miui/calculator/cal/CalculatorTabActivity;)V
+
+    return-void
+.end method
+
+.method public b()V
+    .locals 1
+
+    iget-object p0, p0, Lcom/miui/calculator/cal/CalculatorTabActivity$4;->a:Lcom/miui/calculator/cal/CalculatorTabActivity;
+
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Lcom/miui/calculator/cal/CalculatorTabActivity;->U0(Lcom/miui/calculator/cal/CalculatorTabActivity;Z)V
+
+    return-void
+.end method

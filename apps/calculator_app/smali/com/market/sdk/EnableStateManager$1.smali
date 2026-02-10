@@ -1,0 +1,47 @@
+.class Lcom/market/sdk/EnableStateManager$1;
+.super Ljava/lang/Thread;
+.source "SourceFile"
+
+
+# instance fields
+.field final synthetic f:Lcom/market/sdk/EnableStateManager;
+
+
+# virtual methods
+.method public run()V
+    .locals 5
+
+    new-instance v0, Landroid/content/IntentFilter;
+
+    const-string v1, "com.xiaomi.market.sdk.EnableUpdateReceiver"
+
+    invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/market/sdk/MarketManager;->a()Landroid/content/Context;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/market/sdk/EnableStateManager$EnableStateUpdateReceiver;
+
+    iget-object v3, p0, Lcom/market/sdk/EnableStateManager$1;->f:Lcom/market/sdk/EnableStateManager;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v2, v3, v4}, Lcom/market/sdk/EnableStateManager$EnableStateUpdateReceiver;-><init>(Lcom/market/sdk/EnableStateManager;Lcom/market/sdk/EnableStateManager$1;)V
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    iget-object p0, p0, Lcom/market/sdk/EnableStateManager$1;->f:Lcom/market/sdk/EnableStateManager;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    const-wide/32 v2, 0x337f9800
+
+    add-long/2addr v0, v2
+
+    invoke-static {p0, v0, v1}, Lcom/market/sdk/EnableStateManager;->a(Lcom/market/sdk/EnableStateManager;J)V
+
+    return-void
+.end method

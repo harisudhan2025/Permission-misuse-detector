@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pad_top_divider" android:layout_width="fill_parent" android:layout_height="0.36dip" android:src="@color/cal_divider" android:paddingStart="@dimen/cal_maring_left" android:paddingEnd="@dimen/cal_maring_right" />
+</merge>

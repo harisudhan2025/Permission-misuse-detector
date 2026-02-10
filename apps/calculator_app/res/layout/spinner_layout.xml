@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_spinner_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="start" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/convert_spinner_text_max_width" android:textDirection="locale" android:layout_marginEnd="@dimen/currency_margin_end" style="@style/Miuix.AppCompat.TextAppearance.CurrencyDisplay" />
+    <ImageView android:layout_gravity="end|center" android:id="@android:id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_up_down_arrow" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+.class Lcom/market/sdk/utils/Utils$1;
+.super Lcom/market/sdk/Singleton;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/market/sdk/utils/Utils;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/market/sdk/Singleton<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/market/sdk/Singleton;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected bridge synthetic a()Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/market/sdk/utils/Utils$1;->c()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method protected c()Ljava/lang/String;
+    .locals 1
+
+    invoke-static {}, Lcom/market/sdk/utils/Client;->v()Z
+
+    move-result p0
+
+    const-string v0, ""
+
+    if-eqz p0, :cond_1
+
+    invoke-static {}, Lcom/market/sdk/utils/Client;->t()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "com.xiaomi.market"
+
+    :cond_1
+    :goto_0
+    return-object v0
+.end method

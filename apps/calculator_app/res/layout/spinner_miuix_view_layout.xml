@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.calculator.common.widget.SpinnerContentView android:gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CalWidget.ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="end" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" android:layout_marginEnd="@dimen/option_item_summary_margin_end" style="@style/CalTextAppearance.List.Secondary.InPad" />
+    <ImageView android:layout_gravity="end|center" android:id="@android:id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_up_down_arrow" />
+</com.miui.calculator.common.widget.SpinnerContentView>

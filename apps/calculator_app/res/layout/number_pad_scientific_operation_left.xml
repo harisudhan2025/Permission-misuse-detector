@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_sqrt" android:src="@drawable/btn_sqrt" android:scaleType="centerInside" android:contentDescription="@string/sqrtDesc" android:accessibilityTraversalBefore="@id/btn_c_s" style="@style/CalWidget.Button.Pad.Outer.Left" />
+    <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_fact" android:src="@drawable/btn_fac" android:scaleType="centerInside" android:contentDescription="@string/factorialDesc" android:accessibilityTraversalBefore="@id/digit_7" style="@style/CalWidget.Button.Pad.Outer.Left" />
+    <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_reciprocal" android:src="@drawable/btn_rpc" android:scaleType="centerInside" android:contentDescription="@string/reciprocalDesc" android:accessibilityTraversalBefore="@id/digit_4" style="@style/CalWidget.Button.Pad.Outer.Left" />
+    <com.miui.calculator.cal.NumberPadImageView android:id="@id/const_pi" android:src="@drawable/btn_pi" android:scaleType="centerInside" android:contentDescription="@string/piDesc" android:accessibilityTraversalBefore="@id/digit_1" style="@style/CalWidget.Button.Pad.Outer.Left" />
+    <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_switch_s" android:visibility="invisible" android:src="@drawable/switch_vector_anim_scientific" android:scaleType="centerInside" android:contentDescription="@string/switchDesc" android:accessibilityTraversalBefore="@id/const_e" style="@style/CalWidget.Button.Pad.Outer.Left" />
+</LinearLayout>

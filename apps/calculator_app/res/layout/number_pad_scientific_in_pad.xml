@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="right|bottom" android:orientation="vertical" android:id="@id/lyt_scientific" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_angle_or_rad" android:src="@drawable/btn_deg" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/lparen" android:src="@drawable/cal_bra_left" android:contentDescription="@string/leftParenDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/rparen" android:src="@drawable/cal_bra_right" android:contentDescription="@string/rightParenDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_c_s" android:src="@drawable/btn_pad_c" android:contentDescription="@string/clearDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_del_s" android:src="@drawable/btn_pad_del" android:contentDescription="@string/deleteDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_pct" android:src="@drawable/btn_pad_percent" android:contentDescription="@string/percentDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_div" android:src="@drawable/btn_pad_div" android:contentDescription="@string/divDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_2nd" android:src="@drawable/cal_2nd" android:contentDescription="@string/secondFunctionDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_reciprocal" android:src="@drawable/cal_rec" android:contentDescription="@string/reciprocalDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/const_pi" android:src="@drawable/cal_pi" android:contentDescription="@string/piDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_7" android:text="@string/digit7" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_8" android:text="@string/digit8" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_9" android:text="@string/digit9" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_mul" android:src="@drawable/btn_pad_mul" android:contentDescription="@string/mulDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/fun_sin" android:src="@drawable/cal_sin" android:contentDescription="@string/sinDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/fun_tan" android:src="@drawable/cal_tan" android:contentDescription="@string/tanDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/fun_cos" android:src="@drawable/cal_cos" android:contentDescription="@string/cosDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_4" android:text="@string/digit4" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_5" android:text="@string/digit5" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_6" android:text="@string/digit6" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_sub" android:src="@drawable/btn_pad_minus" android:contentDescription="@string/minusDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_fact" android:src="@drawable/cal_x_fact" android:contentDescription="@string/factorialDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_sqrt" android:src="@drawable/cal_sqrt" android:contentDescription="@string/sqrtDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_pow" android:src="@drawable/cal_pow" android:contentDescription="@string/powerDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_1" android:text="@string/digit1" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_2" android:text="@string/digit2" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_3" android:text="@string/digit3" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_add" android:src="@drawable/btn_pad_plus" android:contentDescription="@string/plusDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/fun_log" android:src="@drawable/cal_lg" android:contentDescription="@string/lgDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/fun_ln" android:src="@drawable/cal_ln" android:contentDescription="@string/lnDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/const_e" android:text="@string/e" android:contentDescription="@string/eDesc" style="@style/CalWidget.Button.Pad.Outer.Top.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_00" android:text="00" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_0" android:text="@string/digit0" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadTextView android:textSize="@dimen/btn_pad_dot_size_in_pad" android:id="@id/dec_point" android:text="@string/dot" android:contentDescription="@string/dotDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_equal_s" android:background="@drawable/number_back_equal" android:src="@drawable/btn_pad_equal" android:contentDescription="@string/equalDesc" style="@style/CalWidget.Button.Pad.V.InPad" />
+    </LinearLayout>
+</LinearLayout>

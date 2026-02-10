@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/btn_pad_div_sci" app:state_scientific="true" />
+    <item android:drawable="@drawable/btn_pad_div_flip" app:state_flip="true" />
+    <item android:drawable="@drawable/btn_pad_div" />
+</selector>

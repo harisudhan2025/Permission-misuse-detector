@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/empty_container" android:layout="@layout/tv_empty" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <miuix.springback.view.SpringBackLayout android:id="@id/sbl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:scrollableView="@id/recycler_view">
+        <miuix.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </miuix.springback.view.SpringBackLayout>
+    <FrameLayout android:id="@id/slide_up" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/slip_up_margin_top" android:layout_marginBottom="@dimen/slip_up_margin_bottom" android:src="@drawable/ic_slide_up" android:contentDescription="@string/actionbar_button_up_description" />
+    </FrameLayout>
+</merge>

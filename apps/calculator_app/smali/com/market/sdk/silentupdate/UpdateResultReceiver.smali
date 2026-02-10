@@ -1,0 +1,152 @@
+.class public Lcom/market/sdk/silentupdate/UpdateResultReceiver;
+.super Landroid/content/BroadcastReceiver;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/market/sdk/silentupdate/UpdateResultReceiver$Callback;
+    }
+.end annotation
+
+
+# static fields
+.field private static final c:Lcom/market/sdk/silentupdate/UpdateResultReceiver;
+
+
+# instance fields
+.field private volatile a:Lcom/market/sdk/silentupdate/UpdateResultReceiver$Callback;
+
+.field private volatile b:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;
+
+    invoke-direct {v0}, Lcom/market/sdk/silentupdate/UpdateResultReceiver;-><init>()V
+
+    sput-object v0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->c:Lcom/market/sdk/silentupdate/UpdateResultReceiver;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lcom/market/sdk/silentupdate/UpdateResultReceiver;
+    .locals 1
+
+    sget-object v0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->c:Lcom/market/sdk/silentupdate/UpdateResultReceiver;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public b(Lcom/market/sdk/silentupdate/UpdateResultReceiver$Callback;)V
+    .locals 2
+
+    iput-object p1, p0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->a:Lcom/market/sdk/silentupdate/UpdateResultReceiver$Callback;
+
+    iget-boolean p1, p0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->b:Z
+
+    if-eqz p1, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-static {}, Lcom/market/sdk/utils/AppGlobal;->a()Landroid/content/Context;
+
+    move-result-object p1
+
+    new-instance v0, Landroid/content/IntentFilter;
+
+    const-string v1, "com.xiaomi.market.DOWNLOAD_INSTALL_RESULT"
+
+    invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->b:Z
+
+    return-void
+.end method
+
+.method public c()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->a:Lcom/market/sdk/silentupdate/UpdateResultReceiver$Callback;
+
+    invoke-static {}, Lcom/market/sdk/utils/AppGlobal;->a()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->b:Z
+
+    return-void
+.end method
+
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 1
+
+    const-string v0, "packageName"
+
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object p1, p0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->a:Lcom/market/sdk/silentupdate/UpdateResultReceiver$Callback;
+
+    if-eqz p1, :cond_2
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object p0, p0, Lcom/market/sdk/silentupdate/UpdateResultReceiver;->a:Lcom/market/sdk/silentupdate/UpdateResultReceiver$Callback;
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Lcom/market/sdk/silentupdate/UpdateResultReceiver$Callback;->a(Landroid/os/Bundle;)V
+
+    :cond_2
+    :goto_0
+    return-void
+.end method

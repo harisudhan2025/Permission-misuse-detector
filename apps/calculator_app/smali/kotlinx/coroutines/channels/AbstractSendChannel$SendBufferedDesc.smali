@@ -1,0 +1,69 @@
+.class Lkotlinx/coroutines/channels/AbstractSendChannel$SendBufferedDesc;
+.super Lkotlinx/coroutines/internal/LockFreeLinkedListNode$AddLastDesc;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkotlinx/coroutines/channels/AbstractSendChannel;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "SendBufferedDesc"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lkotlinx/coroutines/internal/LockFreeLinkedListNode$AddLastDesc<",
+        "Lkotlinx/coroutines/channels/AbstractSendChannel$SendBuffered<",
+        "+TE;>;>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lkotlinx/coroutines/internal/LockFreeLinkedListHead;Ljava/lang/Object;)V
+    .locals 1
+
+    new-instance v0, Lkotlinx/coroutines/channels/AbstractSendChannel$SendBuffered;
+
+    invoke-direct {v0, p2}, Lkotlinx/coroutines/channels/AbstractSendChannel$SendBuffered;-><init>(Ljava/lang/Object;)V
+
+    invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode$AddLastDesc;-><init>(Lkotlinx/coroutines/internal/LockFreeLinkedListNode;Lkotlinx/coroutines/internal/LockFreeLinkedListNode;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected e(Lkotlinx/coroutines/internal/LockFreeLinkedListNode;)Ljava/lang/Object;
+    .locals 0
+
+    instance-of p0, p1, Lkotlinx/coroutines/channels/Closed;
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    instance-of p0, p1, Lkotlinx/coroutines/channels/ReceiveOrClosed;
+
+    if-eqz p0, :cond_1
+
+    sget-object p1, Lkotlinx/coroutines/channels/AbstractChannelKt;->c:Lkotlinx/coroutines/internal/Symbol;
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p1, 0x0
+
+    :goto_0
+    return-object p1
+.end method

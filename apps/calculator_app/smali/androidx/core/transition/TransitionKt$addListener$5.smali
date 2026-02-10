@@ -1,0 +1,73 @@
+.class public final Landroidx/core/transition/TransitionKt$addListener$5;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function1<",
+        "Landroid/transition/Transition;",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+
+# static fields
+.field public static final g:Landroidx/core/transition/TransitionKt$addListener$5;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/core/transition/TransitionKt$addListener$5;
+
+    invoke-direct {v0}, Landroidx/core/transition/TransitionKt$addListener$5;-><init>()V
+
+    sput-object v0, Landroidx/core/transition/TransitionKt$addListener$5;->g:Landroidx/core/transition/TransitionKt$addListener$5;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b(Landroid/transition/Transition;)V
+    .locals 0
+
+    const-string p0, "it"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic r(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Landroid/transition/Transition;
+
+    invoke-virtual {p0, p1}, Landroidx/core/transition/TransitionKt$addListener$5;->b(Landroid/transition/Transition;)V
+
+    sget-object p0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p0
+.end method

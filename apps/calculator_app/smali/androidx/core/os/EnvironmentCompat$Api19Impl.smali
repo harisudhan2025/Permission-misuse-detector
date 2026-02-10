@@ -1,0 +1,31 @@
+.class Landroidx/core/os/EnvironmentCompat$Api19Impl;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/annotation/RequiresApi;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/os/EnvironmentCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "Api19Impl"
+.end annotation
+
+
+# direct methods
+.method static a(Ljava/io/File;)Ljava/lang/String;
+    .locals 0
+    .annotation build Landroidx/annotation/DoNotInline;
+    .end annotation
+
+    invoke-static {p0}, Landroid/os/Environment;->getStorageState(Ljava/io/File;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

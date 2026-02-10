@@ -1,0 +1,8 @@
+version: 2.12.1
+apkFileName: weather.apk
+doNotCompress:
+- png
+- com.climate.forecast.weather.widgets.apk
+- config.armeabi_v7a.apk
+- config.xhdpi.apk
+- manifest.json

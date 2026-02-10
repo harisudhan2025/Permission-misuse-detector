@@ -1,0 +1,70 @@
+.class Landroidx/concurrent/futures/CallbackToFutureAdapter$SafeFuture$1;
+.super Landroidx/concurrent/futures/AbstractResolvableFuture;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/concurrent/futures/CallbackToFutureAdapter$SafeFuture;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/concurrent/futures/AbstractResolvableFuture<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic m:Landroidx/concurrent/futures/CallbackToFutureAdapter$SafeFuture;
+
+
+# virtual methods
+.method protected l()Ljava/lang/String;
+    .locals 2
+
+    iget-object p0, p0, Landroidx/concurrent/futures/CallbackToFutureAdapter$SafeFuture$1;->m:Landroidx/concurrent/futures/CallbackToFutureAdapter$SafeFuture;
+
+    iget-object p0, p0, Landroidx/concurrent/futures/CallbackToFutureAdapter$SafeFuture;->f:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/concurrent/futures/CallbackToFutureAdapter$Completer;
+
+    if-nez p0, :cond_0
+
+    const-string p0, "Completer object has been garbage collected, future will fail soon"
+
+    return-object p0
+
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "tag=["
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Landroidx/concurrent/futures/CallbackToFutureAdapter$Completer;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p0, "]"
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="key_preference_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preference_settings" android:key="calcualtor_settings">
+        <miuix.preference.CheckBoxPreference android:title="@string/preference_use_degress_title" android:key="key_use_degress" android:summary="@string/preference_use_degress_summary" android:defaultValue="true" />
+        <miuix.preference.CheckBoxPreference android:title="@string/preference_use_voice_title" android:key="key_use_voice" android:summary="@string/preference_use_voice_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preference_about_calculator" android:key="about_calculator">
+        <Preference android:title="@string/preference_user_feedback_title" android:key="key_rating" />
+        <Preference android:title="@string/preference_privacy_setting" android:key="key_privacy_setting" />
+        <Preference android:title="@string/preference_privacy_title" android:key="key_privacy_policy" />
+        <miuix.preference.CheckBoxPreference android:title="@string/privacy_switch" android:key="key_privacy_switch" />
+    </PreferenceCategory>
+</PreferenceScreen>

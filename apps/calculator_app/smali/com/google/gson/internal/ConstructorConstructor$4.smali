@@ -1,0 +1,54 @@
+.class Lcom/google/gson/internal/ConstructorConstructor$4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/gson/internal/ObjectConstructor;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/gson/internal/ConstructorConstructor;->c(Ljava/lang/reflect/Type;Ljava/lang/Class;)Lcom/google/gson/internal/ObjectConstructor;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/gson/internal/ObjectConstructor<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/google/gson/internal/ConstructorConstructor;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/gson/internal/ConstructorConstructor;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/gson/internal/ConstructorConstructor$4;->a:Lcom/google/gson/internal/ConstructorConstructor;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/Object;
+    .locals 0
+
+    new-instance p0, Ljava/util/TreeSet;
+
+    invoke-direct {p0}, Ljava/util/TreeSet;-><init>()V
+
+    return-object p0
+.end method

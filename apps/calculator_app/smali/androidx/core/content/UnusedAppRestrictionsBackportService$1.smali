@@ -1,0 +1,39 @@
+.class Landroidx/core/content/UnusedAppRestrictionsBackportService$1;
+.super Landroidx/core/app/unusedapprestrictions/IUnusedAppRestrictionsBackportService$Stub;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/content/UnusedAppRestrictionsBackportService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic f:Landroidx/core/content/UnusedAppRestrictionsBackportService;
+
+
+# virtual methods
+.method public H(Landroidx/core/app/unusedapprestrictions/IUnusedAppRestrictionsBackportCallback;)V
+    .locals 1
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance v0, Landroidx/core/content/UnusedAppRestrictionsBackportCallback;
+
+    invoke-direct {v0, p1}, Landroidx/core/content/UnusedAppRestrictionsBackportCallback;-><init>(Landroidx/core/app/unusedapprestrictions/IUnusedAppRestrictionsBackportCallback;)V
+
+    iget-object p0, p0, Landroidx/core/content/UnusedAppRestrictionsBackportService$1;->f:Landroidx/core/content/UnusedAppRestrictionsBackportService;
+
+    invoke-virtual {p0, v0}, Landroidx/core/content/UnusedAppRestrictionsBackportService;->a(Landroidx/core/content/UnusedAppRestrictionsBackportCallback;)V
+
+    return-void
+.end method

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/root_sv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/top_content_sv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/lyt_convert_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/convert_unit_display" android:textColor="@color/convert_unit_display" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/name_original" android:fontFamily="sans-serif-medium" android:layout_marginEnd="5.0dip" />
+                    <com.miui.calculator.common.widget.AutoFitTextView android:textSize="@dimen/convert_value_size" android:textColor="@color/convert_high_light" android:gravity="end|center" android:id="@id/gst_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="100" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" android:textDirection="locale" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/gst_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                    <TextView android:textSize="@dimen/convert_unit_display" android:textColor="@color/cal_result" android:id="@id/gst_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GST" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_alignParentStart="true" />
+                    <TextView android:id="@id/tv_28" android:background="@drawable/end_side_corner" android:layout_width="@dimen/gst_width" android:layout_height="@dimen/gst_height" android:text="28%" android:layout_alignParentEnd="true" style="@style/GSTButton" />
+                    <TextView android:id="@id/tv_18" android:background="@drawable/side_corner" android:layout_width="@dimen/gst_width" android:layout_height="@dimen/gst_height" android:text="18%" android:layout_toStartOf="@id/tv_28" style="@style/GSTButton" />
+                    <TextView android:id="@id/tv_12" android:layout_width="@dimen/gst_width" android:layout_height="@dimen/gst_height" android:text="12%" android:layout_toStartOf="@id/tv_18" style="@style/GSTButton" />
+                    <TextView android:id="@id/tv_5" android:background="@drawable/side_corner_selected" android:layout_width="@dimen/gst_width" android:layout_height="@dimen/gst_height" android:text="5%" android:layout_toStartOf="@id/tv_12" style="@style/GSTButton" />
+                    <TextView android:id="@id/tv_3" android:background="@drawable/start_side_corner" android:layout_width="@dimen/gst_width" android:layout_height="@dimen/gst_height" android:text="3%" android:layout_toStartOf="@id/tv_5" style="@style/GSTButton" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/final_result_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                    <TextView android:textSize="@dimen/convert_unit_display" android:textColor="@color/cal_result" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/name_price" android:fontFamily="sans-serif-medium" android:layout_marginEnd="5.0dip" />
+                    <com.miui.calculator.common.widget.AutoFitTextView android:textSize="@dimen/convert_value_size" android:textStyle="bold" android:textColor="@color/cal_result" android:gravity="end|center" android:id="@id/final_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="105" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" android:textDirection="locale" />
+                </LinearLayout>
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/detail_captital" android:gravity="center" android:id="@id/txt_cgst" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/name_cgst" />
+            </LinearLayout>
+        </ScrollView>
+        <com.miui.calculator.common.widget.numberpad.ConvertCommonNumberPadInPad android:id="@id/nbp_pad" android:paddingTop="@dimen/convert_nbp_top_in_pad" android:layout_width="fill_parent" android:layout_height="@dimen/convert_numpad_height" android:layout_marginBottom="0.0dip" android:paddingHorizontal="@dimen/convert_numberpad_horizontal_padding" />
+    </LinearLayout>
+</ScrollView>

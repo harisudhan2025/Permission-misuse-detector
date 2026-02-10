@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <intent android:icon="@drawable/app_icon_systemui" android:name="@string/app_name" android:targetPackage="com.miui.calculator" android:action="android.media.action.VIDEO_CAPTURE" android:targetClass="com.miui.calculator.cal.CalculatorTabActivity" android:tag="CALCULATOR_TITLE" />
+</config>

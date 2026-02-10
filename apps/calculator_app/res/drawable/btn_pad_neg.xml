@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/btn_pad_neg" android:width="@dimen/btn_pad_neg" android:viewportWidth="74.0" android:viewportHeight="74.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/btn_pad_neg_color" android:pathData="M16,37.5C16,38.3284 16.6716,39 17.5,39H21.5C22.3284,39 23,38.3284 23,37.5V23H37.5C38.3284,23 39,22.3284 39,21.5V17.5C39,16.6716 38.3284,16 37.5,16H23V1.5C23,0.6716 22.3284,0 21.5,0H17.5C16.6716,0 16,0.6716 16,1.5V16H1.5C0.6716,16 0,16.6716 0,17.5V21.5C0,22.3284 0.6716,23 1.5,23H16V37.5ZM40,66.5C40,65.6716 40.6716,65 41.5,65H71.5C72.3284,65 73,65.6716 73,66.5V70.5C73,71.3284 72.3284,72 71.5,72H41.5C40.6716,72 40,71.3284 40,70.5V66.5Z" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M72,12L5,72" android:strokeColor="#ffff7433" android:strokeWidth="4.0" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0.49721" android:fillAlpha="0.49721" />
+</vector>

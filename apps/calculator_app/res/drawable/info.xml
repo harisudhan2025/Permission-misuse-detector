@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="19.0dip" android:width="18.0dip" android:viewportWidth="18.0" android:viewportHeight="19.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/mortgage_lpr_info_icon_background_color" android:pathData="M9,9.4766m-9,0a9,9 0,1 1,18 0a9,9 0,1 1,-18 0" />
+    <path android:fillColor="@color/mortgage_lpr_info_icon_color" android:pathData="M8,9.9766C8,9.4243 8.4477,8.9766 9,8.9766C9.5523,8.9766 10,9.4243 10,9.9766V13.4766C10,14.0288 9.5523,14.4766 9,14.4766C8.4477,14.4766 8,14.0288 8,13.4766V9.9766Z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/mortgage_lpr_info_icon_color" android:pathData="M9,7.4766C9.8284,7.4766 10.5,6.805 10.5,5.9766C10.5,5.1481 9.8284,4.4766 9,4.4766C8.1716,4.4766 7.5,5.1481 7.5,5.9766C7.5,6.805 8.1716,7.4766 9,7.4766Z" android:fillType="evenOdd" />
+</vector>

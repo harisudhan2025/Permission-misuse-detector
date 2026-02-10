@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <corners android:radius="17.419983dip" />
+    <gradient android:startColor="@color/card_view_bg_start_color" android:endColor="@color/card_view_bg_end_color" android:useLevel="false" android:angle="0.0" android:type="linear" />
+</shape>

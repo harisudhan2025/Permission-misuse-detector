@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@android:id/background" android:background="@drawable/widget_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/widget_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/num_display_area" android:paddingBottom="@dimen/widget_currency_num_display_margin_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="348.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/lyt_unit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/widget_currency_num_display_margin_top" android:layout_weight="3.0" android:layout_marginStart="@dimen/widget_currency_unit_margin_start">
+                <LinearLayout android:focusable="true" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/widget_currency_lyt_unit_mamrgin_bottom" android:layout_weight="1.0">
+                    <TextView android:ellipsize="end" android:layout_gravity="left|center" android:id="@id/txt_unit1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/AppWidget.CurrencyUnitText" />
+                    <TextView android:layout_gravity="center" android:id="@id/short_unit1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_currency_short_margin_start" style="@style/AppWidget.CurrencyShortText" />
+                </LinearLayout>
+                <LinearLayout android:focusable="true" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/widget_currency_lyt_unit_mamrgin_bottom" android:layout_weight="1.0">
+                    <TextView android:ellipsize="end" android:layout_gravity="left|center" android:id="@id/txt_unit2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/AppWidget.CurrencyUnitText" />
+                    <TextView android:layout_gravity="center" android:id="@id/short_unit2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_currency_short_margin_start" style="@style/AppWidget.CurrencyShortText" />
+                </LinearLayout>
+                <LinearLayout android:focusable="true" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:ellipsize="end" android:layout_gravity="left|center" android:id="@id/txt_unit3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/AppWidget.CurrencyUnitText" />
+                    <TextView android:layout_gravity="center" android:id="@id/short_unit3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_currency_short_margin_start" style="@style/AppWidget.CurrencyShortText" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lyt_value" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/widget_currency_num_display_margin_top" android:layout_weight="2.0" android:layout_marginEnd="@dimen/widget_currency_value_margin_end" android:layout_toEndOf="@id/lyt_unit">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:gravity="end|center" android:layout_gravity="center_vertical" android:id="@id/value_unit1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMaxTextSize="@dimen/widget_currency_value_size" style="@style/AppWidget.CurrencyValueText" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:gravity="end|center" android:id="@id/value_unit2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMaxTextSize="@dimen/widget_currency_value_size" style="@style/AppWidget.CurrencyValueText" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:gravity="end|center" android:id="@id/value_unit3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMaxTextSize="@dimen/widget_currency_value_size" style="@style/AppWidget.CurrencyValueText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/pad_top_divider" android:layout_width="fill_parent" android:layout_height="@dimen/widget_divider_height" android:src="@color/widget_divider" android:paddingStart="@dimen/widget_divider_padding" android:paddingEnd="@dimen/widget_divider_padding" />
+        <LinearLayout android:paddingTop="@dimen/widget_currency_num_pad_padding_top" android:paddingBottom="@dimen/widget_num_pad_padding_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="610.0">
+            <include layout="@layout/widget_currency_number_pad" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

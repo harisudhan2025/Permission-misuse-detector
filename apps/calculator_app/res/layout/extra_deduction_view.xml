@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calculator.tax.ExtraDeductionItemView android:id="@id/children_education" android:text="@string/children_education" style="@style/CalWidget.ListItem.ExtraDeduction" />
+    <com.miui.calculator.tax.ExtraDeductionItemView android:id="@id/further_education" android:text="@string/further_education" style="@style/CalWidget.ListItem.ExtraDeduction" />
+    <com.miui.calculator.tax.ExtraDeductionItemView android:id="@id/medical_treatment" android:text="@string/medical_treatment" style="@style/CalWidget.ListItem.ExtraDeduction" />
+    <com.miui.calculator.tax.ExtraDeductionItemView android:id="@id/home_loan" android:text="@string/home_loan" style="@style/CalWidget.ListItem.ExtraDeduction" />
+    <com.miui.calculator.tax.ExtraDeductionItemView android:id="@id/house_rent" android:text="@string/house_rent" style="@style/CalWidget.ListItem.ExtraDeduction" />
+    <com.miui.calculator.tax.ExtraDeductionItemView android:id="@id/support_elder" android:text="@string/support_elder" style="@style/CalWidget.ListItem.ExtraDeduction" />
+    <com.miui.calculator.tax.ExtraDeductionItemView android:id="@id/baby_care" android:text="@string/baby_care" style="@style/CalWidget.ListItem.ExtraDeduction" />
+</merge>

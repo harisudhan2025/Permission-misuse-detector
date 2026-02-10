@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:SuffixNumberInput="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/CalWidget.ListItem.ExtraDeduction">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tax_accumulation_fund" android:layout_weight="1.0" style="@style/CalWidget.Insurance" />
+        <com.miui.calculator.common.widget.SuffixNumberInput android:gravity="end" android:id="@id/sni_fund" android:layout_width="@dimen/tax_si_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_height" SuffixNumberInput:editTextLength="@integer/extendable_suffixnumberinput_max_length" SuffixNumberInput:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/CalWidget.ListItem.ExtraDeduction">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tax_medical" android:layout_weight="1.0" style="@style/CalWidget.Insurance" />
+        <com.miui.calculator.common.widget.SuffixNumberInput android:gravity="end" android:id="@id/sni_medical" android:layout_width="@dimen/tax_si_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_height" SuffixNumberInput:editTextLength="@integer/extendable_suffixnumberinput_max_length" SuffixNumberInput:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/CalWidget.ListItem.ExtraDeduction">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tax_endowment" android:layout_weight="1.0" style="@style/CalWidget.Insurance" />
+        <com.miui.calculator.common.widget.SuffixNumberInput android:gravity="end" android:id="@id/sni_endowment" android:layout_width="@dimen/tax_si_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_height" SuffixNumberInput:editTextLength="@integer/extendable_suffixnumberinput_max_length" SuffixNumberInput:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/CalWidget.ListItem.ExtraDeduction">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tax_unemployment" android:layout_weight="1.0" style="@style/CalWidget.Insurance" />
+        <com.miui.calculator.common.widget.SuffixNumberInput android:gravity="end" android:id="@id/sni_unemployment" android:layout_width="@dimen/tax_si_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_height" SuffixNumberInput:editTextLength="@integer/extendable_suffixnumberinput_max_length" SuffixNumberInput:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/CalWidget.ListItem.ExtraDeduction">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tax_injury" android:layout_weight="1.0" style="@style/CalWidget.Insurance" />
+        <com.miui.calculator.common.widget.SuffixNumberInput android:gravity="end" android:id="@id/sni_injury" android:layout_width="@dimen/tax_si_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_height" SuffixNumberInput:editTextLength="@integer/extendable_suffixnumberinput_max_length" SuffixNumberInput:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/CalWidget.ListItem.ExtraDeduction">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tax_birth" android:layout_weight="1.0" style="@style/CalWidget.Insurance" />
+        <com.miui.calculator.common.widget.SuffixNumberInput android:gravity="end" android:id="@id/sni_birth" android:layout_width="@dimen/tax_si_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_height" SuffixNumberInput:editTextLength="@integer/extendable_suffixnumberinput_max_length" SuffixNumberInput:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="@dimen/provider_margin_top" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/currency_update_time" android:textColor="@color/update_time_tax" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" android:text="@string/tax_rate_provider_east_money" />
+</merge>

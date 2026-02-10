@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:SuffixNumberInput="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:textAppearance="@style/CalTextAppearance.List.Primary" android:gravity="start|center" android:id="@id/check_box" android:textAlignment="viewStart" style="@style/check_box_style" />
+    <com.miui.calculator.common.widget.SuffixNumberInput android:id="@id/sni" android:layout_width="@dimen/tax_si_deduction_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_height" SuffixNumberInput:editTextLength="@integer/extra_deduction_numberinput_max_length" SuffixNumberInput:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+</merge>

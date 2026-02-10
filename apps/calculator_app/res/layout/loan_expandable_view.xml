@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.miui.calculator.common.widget.DropdownItemView android:entries="@array/loan_rulers" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="@dimen/single_list_height" android:title="@string/loan_type_title" android:entryValues="@array/loan_rulers" />
+    <LinearLayout android:id="@id/lyt_lpr" style="@style/CalWidget.ListItem">
+        <TextView android:textAppearance="@style/CalTextAppearance.List.Primary" android:textSize="@dimen/text_pretax_bonuse_size" android:gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/single_list_height" android:text="@string/loan_type_summary_lpr" />
+        <ImageView android:id="@id/image" android:background="@drawable/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/lpr_info" android:layout_marginStart="4.0dip" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <com.miui.calculator.common.widget.SuffixNumberInput android:layout_gravity="end|center" android:id="@id/sni_lpr" android:layout_width="@dimen/tax_si_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_min_height" app:editTextLength="@integer/lpr_suffixnumberinput_max_length" app:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/lyt_base" style="@style/CalWidget.ListItem">
+        <TextView android:textAppearance="@style/CalTextAppearance.List.Primary" android:textSize="@dimen/text_pretax_bonuse_size" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/single_list_height" android:text="@string/loan_basic_point" android:layout_weight="1.0" android:textDirection="locale" />
+        <com.miui.calculator.common.widget.SuffixNumberInput android:id="@id/sni_base" android:layout_width="@dimen/tax_si_width" android:layout_height="wrap_content" android:minHeight="@dimen/tax_si_min_height" app:editTextLength="@integer/lpr_suffixnumberinput_max_length" app:editTextMaxValue="@integer/extendable_suffixnumberinput_max_value" />
+    </LinearLayout>
+</merge>

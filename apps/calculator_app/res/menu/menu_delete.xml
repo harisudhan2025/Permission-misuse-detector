@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/history_recompute" android:id="@id/re_compute" android:title="@string/re_compute" />
+    <item android:icon="@drawable/history_copy" android:id="@id/copy" android:title="@string/cal_copy" />
+    <item android:icon="@drawable/history_delete" android:id="@id/delete" android:title="@string/delete" />
+</menu>

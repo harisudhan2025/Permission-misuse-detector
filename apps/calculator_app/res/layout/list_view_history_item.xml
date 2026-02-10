@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/history_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/result_view_margin_bottom" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/cal_history" android:gravity="end|bottom" android:layout_gravity="end" android:id="@id/expression" android:background="@null" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:textAlignment="viewEnd" android:layoutDirection="ltr" />
+    <TextView android:textSize="@dimen/cal_history" android:textColor="@color/cal_history" android:gravity="end" android:layout_gravity="end" android:id="@id/word_figure" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:layoutDirection="ltr" />
+</LinearLayout>

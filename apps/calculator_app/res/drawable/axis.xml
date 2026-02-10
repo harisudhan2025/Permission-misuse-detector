@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/axis_height" android:width="@dimen/axis_width" android:viewportWidth="920.0" android:viewportHeight="30.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$axis__0" android:pathData="M15,0L905,0A15,15 0,0 1,920 15L920,15A15,15 0,0 1,905 30L15,30A15,15 0,0 1,0 15L0,15A15,15 0,0 1,15 0z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
+</vector>

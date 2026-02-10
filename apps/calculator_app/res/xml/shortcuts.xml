@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_shortcut_scientific_mode" android:enabled="true" android:shortcutId="scientific_mode" android:shortcutShortLabel="@string/item_title_scientific_calculator" android:shortcutLongLabel="@string/item_title_scientific_calculator" android:shortcutDisabledMessage="@string/item_title_scientific_calculator">
+        <intent android:targetPackage="com.miui.calculator" android:action="com.miui.calculator.action.SCIENTIFIC_MODE" android:targetClass="com.miui.calculator.cal.CalculatorActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_convert" android:enabled="true" android:shortcutId="convert_mode" android:shortcutShortLabel="@string/tab_title_convert" android:shortcutLongLabel="@string/tab_title_convert" android:shortcutDisabledMessage="@string/tab_title_convert">
+        <intent android:targetPackage="com.miui.calculator" android:action="com.miui.calculator.action.CONVERT" android:targetClass="com.miui.calculator.cal.CalculatorActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

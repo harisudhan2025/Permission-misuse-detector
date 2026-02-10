@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/root_sv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/top_content_sv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:gravity="end|bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/relationship_input_padding_right" android:paddingEnd="@dimen/relationship_input_padding_right">
+                <TextView android:textSize="@dimen/relationship_input" android:textColor="@color/relationship_text_view_input_default" android:gravity="end" android:id="@id/text_view_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" />
+                <TextView android:textSize="@dimen/relationship_result" android:gravity="end" android:id="@id/text_view_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/relationship_result_margin_top" />
+            </LinearLayout>
+        </ScrollView>
+        <com.miui.calculator.common.widget.numberpad.RelationshipNumberPad android:id="@id/nbp_pad" android:layout_width="fill_parent" android:layout_height="@dimen/relation_numpad_height" />
+    </LinearLayout>
+</ScrollView>

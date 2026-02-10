@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tab_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/loan_detail_subtitle_margin_top" android:layout_marginBottom="@dimen/loan_detail_subtitle_margin_bottom" android:layout_marginHorizontal="@dimen/loan_detail_subtitle_margin_horizontal">
+        <TextView android:ellipsize="end" android:id="@id/tv_tab_monthly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/statistic_label_monthly" android:lines="1" android:layout_marginEnd="@dimen/loan_detail_tv_tab_monthly_margin_end" style="@style/CalWidget.TabView" />
+        <TextView android:ellipsize="end" android:id="@id/tv_tab_yearly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/statistic_label_yearly" android:lines="1" style="@style/CalWidget.TabView" />
+    </LinearLayout>
+    <miuix.springback.view.SpringBackLayout android:id="@id/spring_back_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_container" app:scrollableView="@id/recycler_view">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </miuix.springback.view.SpringBackLayout>
+</RelativeLayout>

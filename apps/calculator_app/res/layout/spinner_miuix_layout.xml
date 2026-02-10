@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/spinner_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/single_list_height" style="@style/CalWidget.ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/CalTextAppearance.List.Primary" android:textSize="@dimen/text_pretax_bonuse_size" android:id="@android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" android:textDirection="locale" />
+    <miuix.appcompat.widget.Spinner android:gravity="end" android:id="@id/spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:spinnerModeCompat="dropdown" />
+</LinearLayout>

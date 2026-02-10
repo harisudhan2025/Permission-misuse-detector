@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="convert_value_size">23.559998dip</dimen>
+    <dimen name="miuix_appcompat_window_extra_padding_horizontal_huge">56.0dip</dimen>
+    <dimen name="miuix_appcompat_window_extra_padding_horizontal_large">36.0dip</dimen>
+    <dimen name="miuix_appcompat_window_extra_padding_horizontal_small">0.0dip</dimen>
+    <dimen name="widget_currency_number_pad_text_height">66.26999dip</dimen>
+    <dimen name="widget_currency_number_pad_text_width">35.349976dip</dimen>
+    <dimen name="widget_number_pad_text_height">35.349976dip</dimen>
+    <dimen name="widget_number_pad_text_width">35.349976dip</dimen>
+</resources>

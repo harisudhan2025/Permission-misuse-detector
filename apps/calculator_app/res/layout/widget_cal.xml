@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@android:id/background" android:background="@drawable/widget_bg" android:paddingTop="@dimen/widget_root_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/widget_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/num_display_area" android:paddingBottom="@dimen/widget_cal_display_pad_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/widget_cal_display_pad">
+            <TextView android:textSize="@dimen/widget_cal_result_typing_size" android:textColor="@color/widget_exp_res_color" android:ellipsize="start" android:gravity="end" android:id="@id/expression" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_marginEnd="@dimen/widget_divider_padding" />
+            <TextView android:textSize="@dimen/widget_cal_result_size" android:textColor="@color/widget_exp_res_color" android:ellipsize="end" android:gravity="end" android:id="@id/result" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:maxLines="1" android:layout_marginEnd="@dimen/widget_divider_padding" />
+        </LinearLayout>
+        <ImageView android:id="@id/pad_top_divider" android:layout_width="fill_parent" android:layout_height="@dimen/widget_divider_height" android:src="@color/widget_divider" android:paddingStart="@dimen/widget_divider_padding" android:paddingEnd="@dimen/widget_divider_padding" />
+        <LinearLayout android:paddingTop="@dimen/widget_num_pad_padding_top" android:paddingBottom="@dimen/widget_num_pad_padding_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingStart="@dimen/widget_num_pad_padding_start" android:paddingEnd="@dimen/widget_num_pad_padding_end">
+            <include layout="@layout/widget_cal_number_pad" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

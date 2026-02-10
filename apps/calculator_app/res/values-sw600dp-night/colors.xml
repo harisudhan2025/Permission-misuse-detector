@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cal_light">#ff000000</color>
+    <color name="cal_operate_color">#ffee8114</color>
+    <color name="tax_spinner_color">#66ffffff</color>
+</resources>

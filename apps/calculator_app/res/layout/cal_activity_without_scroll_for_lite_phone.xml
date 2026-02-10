@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lyt_calculator" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lyt_calculator_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@integer/cal_vertical_view_weight" android:paddingStart="@dimen/cal_maring_left" android:paddingEnd="@dimen/cal_maring_right">
+        <com.miui.calculator.common.widget.PullRefreshLayout android:id="@id/pull_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <miuix.recyclerview.widget.RecyclerView android:layout_gravity="bottom" android:id="@id/listView" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cal_result_margin_bottom" />
+        </com.miui.calculator.common.widget.PullRefreshLayout>
+        <include layout="@layout/cal_gradient_layout" />
+    </FrameLayout>
+    <LinearLayout android:gravity="end|bottom" android:orientation="vertical" android:id="@id/lyt_nbp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/nbp_margin_top" android:layout_marginBottom="@dimen/nbp_margin_bottom" android:layout_weight="@integer/cal_number_pad_weight">
+        <com.miui.calculator.common.widget.numberpad.NumberPadForLitePhone android:layout_gravity="end|bottom" android:id="@id/nbp_pad" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

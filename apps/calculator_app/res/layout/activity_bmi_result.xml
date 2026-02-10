@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/scrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/bmi_result_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/bmi_result_text_size" android:id="@id/result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bmi_result_margin_top" style="@style/MoreAnalysisLabel" />
+            <TextView android:textSize="@dimen/result_label_text_size" android:textColor="@color/result_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bmi_result_label" android:fontFamily="mipro-regular" />
+            <com.miui.calculator.common.widget.AxisView android:id="@id/axis_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/axis_margin_bottom" app:descTextSize="@dimen/bmi_axis_desc_font" app:valueTextSize="@dimen/bmi_axis_value_font" />
+            <View style="@style/CalWidget.Divider" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <FrameLayout android:id="@id/container_analysis" android:layout_width="fill_parent" android:layout_height="@dimen/bmi_container_analysis_height" android:layout_marginTop="@dimen/analysis_margin_top">
+                    <TextView android:textSize="@dimen/analysis_text_size" android:textColor="@color/analysis" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_analysis" />
+                    <TextView android:textSize="@dimen/more_analysis_text_size" android:textColor="@color/more_analysis" android:gravity="center" android:layout_gravity="end|center" android:id="@id/more_analysis" android:background="@drawable/bg_more_analysis" android:layout_width="@dimen/bmi_result_more_analyse_width" android:layout_height="wrap_content" android:text="@string/more_analysis" android:fontFamily="mipro-medium" android:layout_marginStart="0.0dip" android:layout_marginEnd="@dimen/more_analysis_margin_end" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/container_height" android:layout_width="fill_parent" android:layout_height="@dimen/single_list_height" android:layout_below="@id/container_analysis">
+                    <TextView android:textSize="@dimen/bmi_result_analyse_title" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/height" style="@style/MoreAnalysisLabel" />
+                    <TextView android:textSize="@dimen/bmi_result_analyse_value" android:layout_gravity="end|center" android:id="@id/height_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MoreAnalysisValue" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/single_list_height" android:layout_below="@id/container_height">
+                    <TextView android:textSize="@dimen/bmi_result_analyse_title" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_weight" style="@style/MoreAnalysisLabel" />
+                    <TextView android:textSize="@dimen/bmi_result_analyse_value" android:layout_gravity="end|center" android:id="@id/suggest_weight_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MoreAnalysisValue" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</miuix.springback.view.SpringBackLayout>

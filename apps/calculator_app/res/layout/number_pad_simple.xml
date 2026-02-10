@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/lyt_simple" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/lyt_c_d_d" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_c_1" android:src="@drawable/btn_pad_ac" android:scaleType="centerInside" android:contentDescription="@string/clearDesc" style="@style/CalWidget.Button.Pad.H" />
+            <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_del_1" android:src="@drawable/btn_pad_del" android:scaleType="centerInside" android:contentDescription="@string/deleteDesc" style="@style/CalWidget.Button.Pad.H" />
+            <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_div" android:src="@drawable/btn_pad_div" android:scaleType="centerInside" android:contentDescription="@string/divDesc" style="@style/CalWidget.Button.Pad.H" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_7" android:text="@string/digit7" style="@style/CalWidget.Button.Pad.V.Last.H" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_8" android:text="@string/digit8" style="@style/CalWidget.Button.Pad.V.Last.H" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_9" android:text="@string/digit9" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_4" android:text="@string/digit4" style="@style/CalWidget.Button.Pad.V.Last.H" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_5" android:text="@string/digit5" style="@style/CalWidget.Button.Pad.V.Last.H" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_6" android:text="@string/digit6" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_1" android:text="@string/digit1" style="@style/CalWidget.Button.Pad.V.Last.H" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_2" android:text="@string/digit2" style="@style/CalWidget.Button.Pad.V.Last.H" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_3" android:text="@string/digit3" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.miui.calculator.cal.NumberPadImageView android:id="@id/op_pct" android:src="@drawable/btn_pad_percent_n" android:scaleType="centerInside" android:contentDescription="@string/percentDesc" style="@style/CalWidget.Button.Pad.H.Simple" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/btn_0_p" android:text="@string/digit0" style="@style/CalWidget.Button.Pad.H.Simple" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/btn_0_voice" android:text="@string/digit0" style="@style/CalWidget.Button.Pad.H.Simple" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_00" android:text="00" style="@style/CalWidget.Button.Pad.V.Last.H" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/digit_0" android:text="@string/digit0" style="@style/CalWidget.Button.Pad.V.Last.H" />
+            <com.miui.calculator.cal.NumberPadTextView android:id="@id/dec_point" android:text="@string/dot" android:contentDescription="@string/dotDesc" style="@style/CalWidget.Button.Pad.V.Last.H" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lyt_c_d" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_c" android:src="@drawable/btn_pad_c" android:scaleType="centerInside" android:layout_weight="2.0" android:contentDescription="@string/clearDesc" style="@style/CalWidget.Button.Pad.VC" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_c_2" android:visibility="gone" android:src="@drawable/btn_pad_ac" android:scaleType="center" android:contentDescription="@string/clearDesc" style="@style/CalWidget.Button.Pad.V.Simple" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_del" android:src="@drawable/btn_pad_del" android:scaleType="centerInside" android:layout_weight="2.0" android:contentDescription="@string/deleteDesc" style="@style/CalWidget.Button.Pad.VC" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_del_2" android:src="@drawable/btn_pad_del" android:scaleType="centerInside" android:contentDescription="@string/deleteDesc" style="@style/CalWidget.Button.Pad.V.Simple" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_neg" android:src="@drawable/btn_pad_neg" android:scaleType="center" android:contentDescription="@string/negDesc" style="@style/CalWidget.Button.Pad.V.Simple" />
+        <com.miui.calculator.cal.NumberPadImageView android:id="@id/btn_fill" android:visibility="gone" android:scaleType="centerInside" style="@style/CalWidget.Button.Pad.V.Simple" />
+    </LinearLayout>
+</LinearLayout>

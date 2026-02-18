@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1e26;
+    color: white;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background: #06141a;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #00d4ff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+.upload-box {
+    margin-bottom: 30px;
+}
+
+button {
+    background: #00d4ff;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.risk-summary {
+    display: flex;
+    gap: 30px;
+}
+
+.risk-card {
+    background: #102d38;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#00ffcc 0%, #222 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+
+.stats-card {
+    background: #102d38;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.permissions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.permissions li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.badge {
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.badge.normal {
+    background: #00d4ff;
+}
+
+.badge.dangerous {
+    background: #ff4d4d;
+}
+
+.badge.signature {
+    background: #ff9900;
+}
+
+.badge.unknown {
+    background: #777;
+}
+.charts {
+    margin-top: 40px;
+}
+
+.chart-card {
+    width: 400px;
+    background: #102d38;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+canvas {
+    max-width: 100%;
+}
+.risk-summary {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.charts {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+.risk-card {
+    background: #102d38;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.risk-card.CRITICAL\ RISK {
+    box-shadow: 0 0 25px #ff4d4d;
+}
+
+.risk-card.HIGH\ RISK {
+    box-shadow: 0 0 25px orange;
+}
+
+.risk-card.MEDIUM\ RISK {
+    box-shadow: 0 0 25px yellow;
+}
+
+.risk-card.LOW\ RISK {
+    box-shadow: 0 0 25px #00ffcc;
+}

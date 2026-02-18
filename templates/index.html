@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APK Guard - Android Security Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>APK Guard</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Scan APK</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <h1>Android Permission Misuse Detector</h1>
+
+        <!-- Upload Form -->
+        <form action="/scan" method="post" enctype="multipart/form-data" class="upload-box">
+            <input type="file" name="apk_file" required>
+            <button type="submit">Scan APK</button>
+        </form>
+
+        {% if score is defined %}
+
+        <!-- Risk Summary Section -->
+        <div class="risk-summary">
+
+            <div class="risk-card {{ verdict }}">
+                <h2>{{ verdict }}</h2>
+                <div class="circle">0%</div>
+            </div>
+
+            <div class="stats-card">
+                <h3>Scan Summary</h3>
+                <p>Total Permissions: {{ report|length }}</p>
+                <p>Dangerous Combos: {{ combos|length }}</p>
+                <p>Risk Score: {{ score }}</p>
+            </div>
+
+        </div>
+
+        <!-- Analysis Grid -->
+        <div class="analysis-grid">
+
+            <!-- Pie Chart -->
+            <div class="chart-card">
+                <canvas id="permissionChart"></canvas>
+            </div>
+
+            <!-- Permissions List -->
+            <div class="permissions">
+                <h3>Permissions</h3>
+                <ul>
+                    {% for perm, level in report %}
+                    <li>
+                        <span>{{ perm }}</span>
+                        <span class="badge {{ level }}">{{ level }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Dangerous Combos -->
+        {% if combos %}
+        <div class="combos">
+            <h3>⚠ Dangerous Combinations</h3>
+            <ul>
+                {% for combo in combos %}
+                <li>{{ combo }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <!-- Chart Script -->
+        <script>
+            const ctx = document.getElementById('permissionChart');
+
+            const data = {
+                labels: ['Normal', 'Dangerous', 'Signature', 'Unknown'],
+                datasets: [{
+                    data: [
+                        {{ report|selectattr('1', 'equalto', 'normal')|list|length }},
+                        {{ report|selectattr('1', 'equalto', 'dangerous')|list|length }},
+                        {{ report|selectattr('1', 'equalto', 'signature')|list|length }},
+                        {{ report|selectattr('1', 'equalto', 'unknown')|list|length }}
+                    ],
+                    backgroundColor: [
+                        '#00d4ff',
+                        '#ff4d4d',
+                        '#ff9900',
+                        '#888'
+                    ]
+                }]
+            };
+
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: "white"
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Animate Risk Circle
+            let percent = {{ percentage }};
+            let circle = document.querySelector(".circle");
+            let current = 0;
+
+            let interval = setInterval(() => {
+                if (current >= percent) {
+                    clearInterval(interval);
+                } else {
+                    current++;
+                    circle.style.background =
+                        `conic-gradient(#00ffcc ${current}%, #222 ${current}%)`;
+                    circle.innerHTML = current + "%";
+                }
+            }, 15);
+        </script>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+</html>
